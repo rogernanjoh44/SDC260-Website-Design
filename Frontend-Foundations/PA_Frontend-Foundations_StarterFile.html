@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Assignment: 1.8 Performance Assessment
+                    Frontend Foundations
+        Author: Roger Nguang Nanjoh
+        Date: November 14, 2026
+        Purpose: Enhance a book and comic collection
+        webpage using semantic HTML, a user form,
+        internal CSS, and external CSS styling.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collectable Books & Comics</title>
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet"
+          href="PA_Frontend-Foundations_StarterFile.css">
+
+    <!-- Internal CSS: Center the page header text -->
+    <style>
+        .hero {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO / HEADER SECTION -->
+    <header class="hero">
+        <h1>My Collectable Books & Comics</h1>
+        <p>
+            Discover rare editions, legendary comics,
+            and timeless stories across various genres.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- FEATURED COLLECTION SECTION -->
+        <section>
+            <h2>Featured Collection</h2>
+
+            <div class="collection-grid">
+
+                <article class="book-card">
+                    <h3>The Galactic Chronicles</h3>
+                    <p><strong>Genre:</strong> Sci-Fi</p>
+                    <p>
+                        A rare first edition from a
+                        cult-favorite space saga featuring
+                        interstellar diplomacy and
+                        ancient civilizations.
+                    </p>
+                </article>
+
+                <article class="book-card">
+                    <h3>Hero Turned Monster Lord Can't Stop Summoning Judgemental Spirits</h3>
+                    <p><strong>Genre:</strong> Fantasy</p>
+                    <p>
+                        After being reborn as a monster lord,
+                        a former hero must rebuild his new
+                        homeland using overpowered skills
+                        in this fantasy adventure.
+                    </p>
+                </article>
+
+                <article class="book-card">
+                    <h3>Detective Noir</h3>
+                    <p><strong>Genre:</strong> Mystery</p>
+                    <p>
+                        A gritty noir comic following a
+                        detective navigating corruption
+                        and hidden truths in a neon-lit city.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- COLLECTION STATISTICS -->
+        <section>
+            <h2>Collection Overview</h2>
+
+            <article class="stats">
+                <p>Total Items: <strong>128</strong></p>
+                <p>Rare Editions: <strong>32</strong></p>
+                <p>
+                    Most Collected Genre:
+                    <strong>Fantasy</strong>
+                </p>
+            </article>
+        </section>
+
+        <!-- USER REGISTRATION FORM -->
+        <section>
+            <h2>Join the Collector Community</h2>
+            <p>
+                Sign up to receive updates on rare finds,
+                new releases, and collector events.
+            </p>
+
+            <form id="collector-form">
+
+                <label for="collector-name">
+                    Full Name:
+                </label>
+                <input
+                    type="text"
+                    id="collector-name"
+                    name="collector-name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="collector-email">
+                    Email Address:
+                </label>
+                <input
+                    type="email"
+                    id="collector-email"
+                    name="collector-email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="favorite-genre">
+                    Favorite Genre:
+                </label>
+                <select
+                    id="favorite-genre"
+                    name="favorite-genre"
+                    required
+                >
+                    <option value="">
+                        Select a genre
+                    </option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="sci-fi">
+                        Science Fiction
+                    </option>
+                    <option value="mystery">Mystery</option>
+                    <option value="comics">
+                        Comic Books
+                    </option>
+                    <option value="historical">
+                        Historical
+                    </option>
+                </select>
+
+                <button type="submit">
+                    Join Community
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PAGE FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 ROGNAN5104 Archive
+        </p>
+        <p>
+            Built for passionate readers and
+            avid collectors.
+        </p>
+    </footer>
+
+</body>
+</html>
