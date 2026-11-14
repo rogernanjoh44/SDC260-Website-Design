@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    Assignment: 1.7 Performance Assessment
+                Box Model Inventory
+    Author: Roger Nguang Nanjoh
+    Date: November 14, 2026
+    Purpose: Create a figurine inventory webpage
+             using semantic HTML, an inventory
+             table, and CSS box model properties
+             to improve layout and readability.
+-->
+    <meta charset="UTF-8">
+    <title>Box Model Inventory</title>
+
+<style>
+    /* Overall webpage layout */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fb;
+        color: #243247;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    /* Page header */
+    header {
+        background-color: #24466b;
+        color: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border: 3px solid #18314d;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /* Main content container */
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #c5d4e5;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    /* Inventory content sections */
+    section {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #d6e2ef;
+        border-radius: 8px;
+        background-color: #f8fbff;
+    }
+
+    /* Inventory table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th, td {
+        border: 1px solid #9aafc4;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #24466b;
+        color: white;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #eaf1f8;
+    }
+
+    /* Page footer */
+    footer {
+        margin-top: 20px;
+        padding: 15px;
+        border-top: 2px solid #24466b;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Figurine Inventory</h1>
+    </header>
+<!-- Main inventory content -->
+<main>
+
+    <!-- Introduction section -->
+    <section>
+        <h2>Welcome to My Figurine Inventory</h2>
+        <p>
+            This webpage displays a collection of
+            figurines, including their categories,
+            quantities, and prices.
+        </p>
+    </section>
+
+    <!-- Figurine inventory section -->
+    <section>
+        <h2>Available Figurines</h2>
+
+        <article>
+            <h3>Inventory Collection</h3>
+            <p>
+                The following table lists the
+                figurines currently in stock.
+            </p>
+
+            <table>
+                <caption>
+                    Figurine Inventory List
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Figurine Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Dragon Warrior</td>
+                        <td>Fantasy</td>
+                        <td>5</td>
+                        <td>$29.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>Space Explorer</td>
+                        <td>Science Fiction</td>
+                        <td>8</td>
+                        <td>$24.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>Medieval Knight</td>
+                        <td>Historical</td>
+                        <td>4</td>
+                        <td>$34.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>Superhero Guardian</td>
+                        <td>Comic Book</td>
+                        <td>6</td>
+                        <td>$39.99</td>
+                    </tr>
+
+                    <tr>
+                        <td>Robot Defender</td>
+                        <td>Science Fiction</td>
+                        <td>3</td>
+                        <td>$44.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <!-- Additional information section -->
+    <aside>
+        <h2>Inventory Information</h2>
+        <p>
+            Inventory quantities represent the
+            number of figurines currently available.
+            Prices are listed in US dollars.
+        </p>
+    </aside>
+</main>
+<!-- Page footer -->
+<footer style="background-color: #24466b;
+               color: white;
+               padding: 20px;
+               margin-top: 25px;
+               border-radius: 8px;">
+    <p>&copy; 2026 Figurine Inventory</p>
+    <p>Created by ROGNAN5104</p>
+</footer>
+
+</body>
+</html>
