@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Assignment: 1.9 Blueprints to Browsers
+    Author: Roger Nguang Nanjoh
+    Date: November 14, 2026
+    Purpose: Initial homepage prototype for an online
+    collectible books and comics store.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Collectible Books & Comics Store</title>
+
+    <style>
+        /* Default page appearance */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            background-color: #f2f5fa;
+            color: #243247;
+            line-height: 1.6;
+        }
+
+        /* Header and footer */
+        header, footer {
+            background-color: #24466b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+
+        nav a:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 4px;
+        }
+
+        /* Main content */
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Content sections */
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #24466b;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #24466b;
+        }
+
+        /* Product cards */
+        .product {
+            border-left: 4px solid #b67b13;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f2f5fa;
+        }
+
+        /* Footer */
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Website header -->
+    <header id="home">
+        <h1>Collectible Books & Comics</h1>
+        <p>Discover Rare Books and Comics</p>
+
+        <!-- Prototype navigation -->
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Catalog</a>
+            <a href="#details">Product Details</a>
+            <a href="#cart">Shopping Cart</a>
+            <a href="#checkout">Checkout</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Homepage -->
+        <section aria-labelledby="welcome-title">
+            <h2 id="welcome-title">Welcome to Our Store</h2>
+            <p>
+                Explore rare books, collectible comics,
+                and limited-edition publications.
+            </p>
+        </section>
+
+        <!-- Product catalog -->
+        <section id="products">
+            <h2>Featured Products</h2>
+
+            <div class="product">
+                <h3>The Galactic Chronicles</h3>
+                <p>Genre: Science Fiction</p>
+                <p>Price: $29.99</p>
+            </div>
+
+            <div class="product">
+                <h3>Detective Noir</h3>
+                <p>Genre: Mystery</p>
+                <p>Price: $24.99</p>
+            </div>
+        </section>
+
+        <!-- Product details -->
+        <section id="details">
+            <h2>Product Details</h2>
+            <p>
+                Detailed descriptions, product images,
+                availability, and collector information
+                will be provided in a future phase.
+            </p>
+        </section>
+
+        <!-- Shopping cart -->
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <p>
+                Customers will be able to add products,
+                update quantities, and review totals
+                in a future version.
+            </p>
+        </section>
+
+        <!-- Checkout -->
+        <section id="checkout">
+            <h2>Checkout</h2>
+            <p>
+                Secure online checkout and payment
+                processing are planned for a future phase.
+            </p>
+        </section>
+
+        <!-- About Us -->
+        <section id="about">
+            <h2>About Our Store</h2>
+            <p>
+                Collectible Books & Comics connects
+                collectors with rare books, comics,
+                and exciting publications.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                A customer contact form and support
+                information will be added in a future phase.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>&copy; 2026 Collectible Books & Comics</p>
+        <p>Created by ROGNAN5104</p>
+        <p>SDC260 - Assignment 1.9</p>
+    </footer>
+
+</body>
+</html>
+S
