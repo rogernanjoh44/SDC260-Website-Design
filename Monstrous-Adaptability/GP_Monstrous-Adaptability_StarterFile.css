@@ -1,0 +1,135 @@
+
+/*
+Author: Roger Nugang Nanjoh
+Date: November 21, 2026
+Purpose: Styles the Mythical Creature Bestiary
+using responsive CSS and Flexbox layouts
+for Assignment 2.3 - Monstrous Adaptability.
+*/
+
+/* ========================================
+   GLOBAL STYLES
+   ----------------------------------------
+   Uses high-contrast colors for readability,
+   avoids overly complex gradients, and
+   ensures font sizes are easy to read.
+======================================== */
+
+body {
+    font-family: Arial, sans-serif; /* Readable font with fallback */
+    margin: 0; /* Removes default browser spacing */
+    padding: 20px; /* Adds space inside the body */
+    background-color: #1b1f2a; /* Dark background for contrast */
+    color: #f5f7fa; /* Light text for readability */
+    line-height: 1.6; /* Improves line spacing */
+}
+
+/* ========================================
+   HEADER / FOOTER
+======================================== */
+
+header, footer {
+    text-align: center; /* Centers text */
+    margin-bottom: 20px; /* Adds space below */
+}
+
+/* ========================================
+   LAYOUT CONTAINER
+======================================== */
+
+.creature-container {
+
+    /* STEP 3: Flexbox Implementation */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ========================================
+   CARD BASE STYLE
+   ----------------------------------------
+   Strong contrast improves readability.
+   Spacing and rounded corners improve comfort.
+======================================== */
+
+.creature-card {
+    border-radius: 12px; /* Rounded corners */
+    padding: 16px; /* Internal spacing */
+    width: 250px; /* Consistent card width */
+    background-color: #2a3142; /* Dark card background */
+    border: 1px solid #3f4a63; /* Subtle border */
+}
+
+/* ========================================
+   TEXT STYLING
+======================================== */
+
+.creature-title {
+    font-size: 1.2rem; /* Scalable font size */
+    font-weight: bold; /* Emphasizes creature names */
+}
+
+/* ========================================
+   CREATURE IMAGE CONTAINER
+   ----------------------------------------
+   Controls the size and shape of the
+   visible image area.
+======================================== */
+
+.creature-image {
+    width: 100%; /* Full width of parent */
+    height: 120px; /* Uniform image height */
+    margin-bottom: 10px; /* Space below image */
+    border-radius: 6px; /* Rounded corners */
+    overflow: hidden; /* Hides overflowing content */
+}
+
+/* ========================================
+   IMAGE INSIDE CONTAINER
+   ----------------------------------------
+   Controls image sizing and positioning.
+======================================== */
+
+.creature-image img {
+    width: 100%; /* Full container width */
+    height: 100%; /* Full container height */
+    object-fit: contain; /* Fits entire image without cropping */
+    display: block; /* Removes inline image gaps */
+}
+
+/* ========================================
+   TYPE COLOR CODING
+   ----------------------------------------
+   Defines border colors for creature types.
+======================================== */
+
+.dragon {
+    border: 3px solid #ef4444; /* Red */
+}
+
+.mystic {
+    border: 3px solid #a855f7; /* Purple */
+}
+
+.beast {
+    border: 3px solid #22c55e; /* Green */
+}
+
+.aquatic {
+    border: 3px solid #3b82f6; /* Blue */
+}
+
+/* ========================================
+   STEP 4: NEW CREATURE TYPE
+   ----------------------------------------
+   Custom styling for the Fairy creature.
+   Uses a purple border, light lavender
+   background, and dark readable text.
+======================================== */
+
+.creature-card.fairy {
+    border: 3px solid #b46ad4;
+    background-color: #f5eafa;
+    color: #292038;
+}
