@@ -1,0 +1,44 @@
+/* Assignment: SDC260 2.6 Style & Substance
+   Author: Roger Nguang Nanjoh
+   Last updated: November 21, 2026
+   Purpose: Shared brand theme, accessible layout, and responsive styles. */
+:root { --navy:#24466b; --gold:#b7791f; --background:#f2f5fa; --ink:#243247; --white:#fff; --border:#d3dce8; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; font-family:Arial,Helvetica,sans-serif; font-size:1rem; line-height:1.6; color:var(--ink); background:var(--background); }
+a { color:var(--navy); }
+a:focus-visible, button:focus-visible { outline:3px solid var(--gold); outline-offset:4px; }
+.skip-link { position:absolute; left:-9999px; top:1rem; background:white; padding:.75rem; z-index:10; }
+.skip-link:focus { left:1rem; }
+.wrap { width:min(100% - 2rem, 1120px); margin-inline:auto; }
+.site-header,.site-footer { background:var(--navy); color:var(--white); }
+.site-header { padding:1.3rem 0; }
+.site-header p { margin:.3rem 0 1rem; }
+.brand { color:white; font-size:1.55rem; font-weight:700; text-decoration:none; }
+nav { display:flex; flex-wrap:wrap; gap:.4rem 1rem; }
+nav a { color:white; padding:.3rem .2rem; }
+nav a[aria-current="page"] { text-decoration-thickness:3px; text-underline-offset:.35rem; font-weight:bold; }
+main { padding-block:2rem 3rem; min-height:55vh; }
+section,.detail-panel { background:white; border-radius:10px; padding:1.5rem; margin-bottom:1.5rem; }
+.hero { padding:2.5rem 1.5rem; border-top:5px solid var(--gold); }
+h1,h2,h3 { line-height:1.25; color:var(--navy); }
+h1 { font-size:clamp(1.8rem,4vw,2.6rem); }
+h2 { font-size:1.5rem; }
+.eyebrow { color:#835510; font-weight:bold; }
+.product-grid,.feature-grid { display:grid; grid-template-columns:1fr; gap:1rem; }
+.product-card,.feature-grid article { border:1px solid var(--border); border-left:4px solid var(--gold); padding:1.25rem; border-radius:6px; background:var(--background); min-width:0; }
+.product-card h3 { margin-top:.35rem; }
+.button { display:inline-block; padding:.65rem 1rem; background:var(--navy); color:white; border-radius:6px; font-weight:bold; text-decoration:none; }
+.button:hover { background:#17314e; }
+.button.secondary { background:white; color:var(--navy); border:2px solid var(--navy); }
+.notice { border-left:4px solid var(--gold); background:var(--background); padding:1.2rem; border-radius:5px; }
+dl { display:grid; grid-template-columns:max-content 1fr; gap:.4rem 1rem; }
+dt { font-weight:bold; }
+dd { margin:0; }
+.site-footer { padding:1.3rem 0; }
+.site-footer p { margin:.25rem 0; }
+/* Tablet: two columns from 768px. */
+@media (min-width:768px) { .product-grid,.feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .hero { padding:3rem; } }
+/* Desktop: three columns from 1024px. */
+@media (min-width:1024px) { .product-grid,.feature-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
